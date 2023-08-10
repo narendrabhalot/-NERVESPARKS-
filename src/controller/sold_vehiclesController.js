@@ -13,7 +13,7 @@ const createSoldVehical = async function (req, res) {
         if(!getCarbyid){
             return  res.status(400).json({ msg :"car_id is invalid"})
         }
-        
+
        
 
         let vehicleData = {

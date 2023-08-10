@@ -42,8 +42,8 @@ const createUser = async function (req, res) {
             password: password,
             vehicle_info: getVehicalIds,
         }
-        let cars = await userCollection.insertOne(userData)
-        res.status(201).json({ cars: cars })
+        let users = await userCollection.insertOne(userData)
+        res.status(201).json({ cars: users })
     } catch (err) {
         return res.status(400).send({ error: err.message })
     }
